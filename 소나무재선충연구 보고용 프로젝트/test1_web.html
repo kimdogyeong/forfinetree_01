@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="ko" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>name</title>
+<style type="text/css">
+.auto-style1 {
+	border-width: 0px;
+}
+.auto-style2 {
+	text-align: center;
+}
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        text-align: center;
+      }
+      #img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+</style>
+</head>
+
+
+<body>
+
+<table style="width: 100%">
+	<tr>
+		<td>name : ***장치번호***</td>
+		<td>지역 :&nbsp;***해당지역***</td>
+		<td>수목 분류 : ***수목분류***</td>
+		<td>수목 상태 : ***수목상태***</td>
+		<td colspan="2">GPS 좌표 : ***GPS좌표***</td>
+	</tr>
+	<tr>
+		<td colspan="4">download : <a href="raw_302R.txt">raw file</a></td>
+	</tr>
+
+	<tr>
+		<td style="height: 18px"></td>
+		<td style="height: 18px">
+			<button onclick="toggleImg1()">1 months</button>
+	</td>
+		<td style="height: 18px">
+			<button onclick="toggleImg2()">2 weeks</button>
+</td>
+		<td style="height: 18px">	
+			<button onclick="toggleImg3()">1 week</button>
+</td>
+		<td colspan="2" style="height: 18px">수목 사진 : <a href="고령1_사진.zip">download</a></td>
+	</tr>
+	<tr>
+	    <div class="container">
+		<td colspan="4" style="height: 281px" class="auto-style2">
+		<img id="img" src="1months_302R.png" />
+			 <script>
+    		  function toggleImg1() {
+   		     document.getElementById("img").src = "1months_302R.png";
+   			   }
+    		</script>
+
+			<script>
+			function toggleImg2() {
+				document.getElementById("img").src = "2weeks_302R.png";
+			}
+			</script>
+
+			<script>
+			function toggleImg3() {
+				document.getElementById("img").src = "1weeks_302R.png";
+			}
+			</script>
+
+ </td>
+		<td style="width: 268px; height: 281px" class="auto-style2">
+		<a href="20220726_고령1_나무6.JPG">
+		<img height="200" src="20220726_고령1_나무6.JPG" width="300" class="auto-style1" /></a></td>
+		<td style="height: 281px" class="auto-style2">
+		<a href="20220726_고령1_나무상태2.JPG">
+		<img height="200" src="20220726_고령1_나무상태2.JPG" width="300" class="auto-style1" /></a></td>
+	</tr>
+</table>
+
+</body>
+
+</html>
